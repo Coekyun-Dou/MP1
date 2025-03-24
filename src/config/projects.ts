@@ -15,81 +15,87 @@ export type ActivityItemType = {
 }
 
 // Awards
-export const awardsHeadLine = "Awards & Honors"
+export const awardsHeadLine = "奖励与表彰"
 export const awardsIntro = "Recognition for academic and professional achievements."
 
 export const awards: Array<ActivityItemType> = [
   {
-    name: 'Outstanding Teacher Award',
+    name: '第十九届广东省青少年机器人竞赛金牌',
     description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    date: '2019',
+    location: '广东东莞',
   },
   {
-    name: 'Zhui Ying Award',
+    name: '潮汕星河奖科技奖',
     description: '',
-    date: '2023',
-    location: 'Qingpu, Shanghai',
+    date: '2020',
+    location: '广东汕头',
   },
+  {
+    name:'第十六届蓝桥杯大赛广东省一等奖',
+    description:'',
+    date:'2025',
+    location:'广东阳江'
+  }
 ]
 
 // Research & Projects
-export const projectHeadLine = "Research & Projects"
+export const projectHeadLine = "研究与项目"
 export const projectIntro = "Academic research and technical projects I've worked on."
 
 export const projects: Array<ProjectItemType> = [
+  // {
+  //   name: 'Student Final Project Portfolio',
+  //   description: 'Static website portfolio',
+  //   link: { href: 'scls-cs.com', label: 'GitHub Cards' },
+  //   tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
+  // },
+  // {
+  //   name: 'Seeking DNA',
+  //   description: '2022 SCLS Hackathon',
+  //   link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
+  //   tags: ['Hackathon', 'Java']
+  // },
+  // {
+  //   name: 'Texas Holdem Poker Judge',
+  //   description: '2024 SCLS Hackathon',
+  //   link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
+  //   tags: ['Hackathon']
+  // },
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
-  },
-  {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
-  },
-  {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
-  },
-  {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: '基于YOLOv8的海洋牧场鱼类数量检测',
+    description: '运用深度学习相关知识，改进优化YOLOv8视觉模型，提高计算机视觉水下鱼类检测的效率与质量',
+    link: { href: 'https://www.gdou.edu.cn/yjxq/', label: 'View Course' },
+    tags: ['深度学习', '计算机视觉','Pyqt']
   },
 ]
 
 // Hobbies & Volunteer
-export const activitiesHeadLine = "Hobbies & Volunteer"
-export const activitiesIntro = "Personal interests and community contributions."
+export const activitiesHeadLine = "兴趣爱好"
+// export const activitiesIntro = "Personal interests"
 
 export const activities: Array<ActivityItemType> = [
   {
-    name: 'Python Workshop',
+    name: '篮球',
     description:
-      'Teaching basic Python programming concepts to beginners. Covering variables, control flow, and functions.',
-    date: '2024-02-24',
-    location: 'Shanghai',
-    link: 'https://example.com/python-workshop',
+      '热爱篮球与勒布朗，常打1、2号位，扮演球场指挥官，球衣号码：3',
+    date: 'forever',
+    location: '中国',
+    link: 'https://china.nba.cn/index',
   },
   {
-    name: 'AI Ethics Discussion',
+    name: '音乐',
     description:
-      'A group discussion about the ethical implications of AI development and its impact on society.',
-    date: '2024-03-01',
-    location: 'Shanghai',
-    link: 'https://example.com/ai-ethics',
+      '喜欢R&B，最喜爱的歌手：JayChou',
+    date: 'forever',
+    location: '中国',
+    link: 'https://baike.baidu.com/item/%E5%91%A8%E6%9D%B0%E4%BC%A6/129156',
   },
   {
-    name: 'Code Review Session',
+    name: '阅读',
     description:
-      'Helping students improve their coding skills through peer code review and best practices sharing.',
-    date: '2024-03-15',
-    location: 'Shanghai',
+      '喜好阅读，诗歌、散文与小说，最喜爱的作家：史铁生',
+    date: 'forever',
+    location: '中国',
   },
 ]

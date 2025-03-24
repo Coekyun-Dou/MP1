@@ -29,19 +29,19 @@ export const footerItems: Array<NavItemType> = [
 
 export const navItems: Array<NavItemType> = [
   {
-    name: 'Home',
+    name: '主页',
     href: '/'
   },
   {
-    name: 'About',
+    name: '简介',
     href: '/about'
   },
   {
-    name: 'Projects',
+    name: '项目',
     href: '/projects'
   },
   {
-    name: 'Blogs',
+    name: '博客',
     href: '/blogs'
   }
 ]
