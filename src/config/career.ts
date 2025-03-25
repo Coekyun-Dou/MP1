@@ -28,7 +28,7 @@ export const careerList: Array<CareerItemType> = [
       title: '“基于YOLOv8的海洋牧场鱼类数量检测”项目组成员',
       logo: 'coffee',
       start: '2023',
-      end: 'present'
+      end: '至今'
     },
     {
       company: '广东海洋大学-泰迪智能科技联合双创工作室',

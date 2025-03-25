@@ -6,7 +6,7 @@ export * from './career'
 export const name = 'Felix Du'
 export const headline = '一名来自广东海洋大学的学生'
 export const introduction =
-  "Coucou Les Amis! 我叫Felix Du，来自广东省汕头市。目前就读于广东海洋大学计算机科学与工程学院，未来立志成为一名生物信息学领域的优秀学者，欢迎大家与我交朋友"
+  "Coucou Les Amis! 我叫Felix Du，来自广东省汕头市。目前就读于广东海洋大学计算机科学与工程学院，未来立志成为一名生物信息学领域的优秀学者，欢迎大家与我交朋友！"
 export const email = 'less_duuuzx@163.com'
 export const githubUsername = 'Coekyun-Dou'
 
