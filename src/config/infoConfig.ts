@@ -14,8 +14,10 @@ export const githubUsername = 'Coekyun-Dou'
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
   "Coucou Les Amis!My name is Felix Du. I'm from Swotaw, Guangdong Province. I'm currently studying at the school of Computer Science and Engineering of GDOU, and I aspire to become a scholar in the field of bioinformatics in the future.",
-  'Currently I am working on a new course called AI Camp, an innovative course where high school students create real-world products and startups while exploring the frontiers of AI.',
-  "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the life lessons I've learned.",
+  "I'm currently doing research on computer vision. In addition, I also used my spare time to learn bioinformatics knowledge on my own to prepare for the Bioinformatics direction of the Center for Excellence in Molecular Cell Science,CAS, and I hope to become an excellent scholar in this field in the future. ",
+  "My Favorites Poem：",
+  "男儿立志出乡关，学不成名誓不还。",
+  "埋骨何须桑梓地，人生无处不青山。"
 ]
 
 // blog
