@@ -72,7 +72,7 @@ export const projects: Array<ProjectItemType> = [
 
 // Hobbies & Volunteer
 export const activitiesHeadLine = "兴趣爱好"
-// export const activitiesIntro = "Personal interests"
+export const activitiesIntro = "Personal interests"
 
 export const activities: Array<ActivityItemType> = [
   {
