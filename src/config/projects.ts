@@ -65,7 +65,7 @@ export const projects: Array<ProjectItemType> = [
   {
     name: '基于YOLOv8的海洋牧场鱼类数量检测',
     description: '运用深度学习相关知识，改进优化YOLOv8视觉模型，提高计算机视觉水下鱼类检测的效率与质量',
-    link: { href: 'https://github.com/Coekyun-Dou/fish-couting', label: 'View Course' },
+    link: { href: 'github.com/Coekyun-Dou/fish-couting', label: 'View Course' },
     tags: ['深度学习', '计算机视觉','Pyqt']
   },
 ]
