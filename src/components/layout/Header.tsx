@@ -38,9 +38,9 @@ function MobileNavigation(
 ) {
   return (
     <Popover {...props}>
-      <Popover.Button className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 ring-muted backdrop-blur ">
+      <Popover.Button className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 ring-primary/20 backdrop-blur bg-card/80 hover:bg-primary/10 hover:scale-105 transition-all duration-300">
         Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2" />
+        <ChevronDownIcon className="ml-3 h-auto w-2 group-hover:rotate-180 transition-transform duration-300" />
       </Popover.Button>
       <Transition.Root>
         <Transition.Child
@@ -103,15 +103,15 @@ function NavItem({
       <Link
         href={href}
         className={clsx(
-          'relative block px-3 py-2 transition',
+          'relative block px-3 py-2 transition-all duration-300',
           isActive
-            ? 'text-primary'
-            : 'opacity-80 hover:opacity-100 hover:text-primary',
+            ? 'text-primary font-medium'
+            : 'opacity-80 hover:opacity-100 hover:text-primary hover:scale-105',
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-[1.5px] bg-gradient-to-r from-primary/0 via-primary/40 to-primary/0 dark:from-primary/0 dark:via-primary/40 dark:to-primary/0" />
+          <span className="absolute inset-x-1 -bottom-px h-[2px] bg-gradient-to-r from-primary/0 via-primary/70 to-primary/0 dark:from-primary/0 dark:via-primary/60 dark:to-primary/0 rounded-full" />
         )}
       </Link>
     </li>
@@ -121,12 +121,12 @@ function NavItem({
 function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
-      <ul className="flex rounded-full px-3 text-sm font-medium bg-card ring-1 ring-muted shadow-md backdrop-blur">
+      <ul className="flex rounded-full px-3 text-sm font-medium bg-card/80 ring-1 ring-primary/20 shadow-lg backdrop-blur-md">
         {navItems.map((item, index) => (
           <Fragment key={item.name}>
             {index > 0 && (
               <li className="flex items-center">
-                <div className="h-4 w-px bg-muted-foreground/30" />
+                <div className="h-4 w-px bg-gradient-to-b from-transparent via-muted-foreground/30 to-transparent" />
               </li>
             )}
             <NavItem href={item.href}>{item.name}</NavItem>

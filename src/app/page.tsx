@@ -36,10 +36,10 @@ export default async function Home() {
         </div>
 
         {/* Awards */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Award size={28}/>
-            {awardsHeadLine}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-gradient-to-r from-transparent via-muted to-transparent">
+          <h2 className="flex flex-row items-center justify-start gap-3 text-xl font-semibold tracking-tight md:text-3xl opacity-90 mb-4 group">
+            <Award size={28} className="text-primary group-hover:scale-110 transition-transform duration-300"/>
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{awardsHeadLine}</span>
           </h2>
           <ul
             role="list"
@@ -52,10 +52,10 @@ export default async function Home() {
         </div>
 
         {/* Research & Projects */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Briefcase size={28}/>
-            {projectHeadLine}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-gradient-to-r from-transparent via-muted to-transparent">
+          <h2 className="flex flex-row items-center justify-start gap-3 text-xl font-semibold tracking-tight md:text-3xl opacity-90 mb-4 group">
+            <Briefcase size={28} className="text-primary group-hover:scale-110 transition-transform duration-300"/>
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{projectHeadLine}</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
             {projectIntro}
@@ -71,10 +71,10 @@ export default async function Home() {
         </div>
 
         {/* Hobbies & Volunteer */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Heart size={28}/>
-            {activitiesHeadLine}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-gradient-to-r from-transparent via-muted to-transparent">
+          <h2 className="flex flex-row items-center justify-start gap-3 text-xl font-semibold tracking-tight md:text-3xl opacity-90 mb-4 group">
+            <Heart size={28} className="text-primary group-hover:scale-110 transition-transform duration-300"/>
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{activitiesHeadLine}</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
             {activitiesIntro}
@@ -90,9 +90,9 @@ export default async function Home() {
         </div>
 
         {/* Blog Section */}
-        <div className="mx-auto flex flex-col max-w-xl gap-6 py-8 my-8 lg:max-w-none border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            {blogHeadLine}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 py-8 my-8 lg:max-w-none border-t border-gradient-to-r from-transparent via-muted to-transparent">
+          <h2 className="flex flex-row items-center justify-start gap-3 text-xl font-semibold tracking-tight md:text-3xl opacity-90 mb-4">
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">{blogHeadLine}</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
             {blogIntro}

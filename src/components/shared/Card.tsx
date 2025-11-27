@@ -28,7 +28,7 @@ Card.Link = function CardLink({
 }: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
     <>
-      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 transition group-hover:scale-100 sm:-inset-x-6 sm:rounded-2xl group-hover:bg-muted/50 " />
+      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 transition-all duration-300 group-hover:scale-100 sm:-inset-x-6 sm:rounded-2xl group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:via-primary/10 group-hover:to-primary/5 group-hover:shadow-lg" />
       <Link {...props}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -48,7 +48,7 @@ Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
   let Component = as ?? 'h2'
 
   return (
-    <Component className="text-base font-semibold tracking-tight">
+    <Component className="text-base font-semibold tracking-tight group-hover:text-primary transition-colors duration-300">
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
     </Component>
   )

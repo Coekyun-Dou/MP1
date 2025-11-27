@@ -25,10 +25,10 @@ export default function Projects() {
           <ProjectCard key={project.name} project={project} />
         ))}
       </ul>
-      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Calendar size={28}/>
-            Hobbies & Volunteer
+      <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-gradient-to-r from-transparent via-muted to-transparent">
+          <h2 className="flex flex-row items-center justify-start gap-3 text-xl font-semibold tracking-tight md:text-3xl opacity-90 mb-4 group">
+            <Calendar size={28} className="text-primary group-hover:scale-110 transition-transform duration-300"/>
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">Hobbies & Volunteer</span>
           </h2>
           <ul
             role="list"

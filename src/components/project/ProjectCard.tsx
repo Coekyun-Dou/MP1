@@ -13,13 +13,13 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
-      <div className="relative flex flex-col justify-between h-full w-full p-4 rounded-2xl border border-muted-foreground/20 shadow-sm transition-all group-hover:scale-[1.03] group-hover:shadow-md group-hover:bg-muted/5">
+      <div className="relative flex flex-col justify-between h-full w-full p-5 rounded-2xl border border-muted-foreground/20 shadow-sm transition-all duration-300 group-hover:scale-[1.05] group-hover:shadow-xl group-hover:border-primary/30 group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:via-transparent group-hover:to-primary/5">
         <div className=''>
           <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-start sm:items-center gap-4'>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full">
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
               <Favicon url={project.link.href} />
             </div>
-            <Component className="text-base font-semibold">
+            <Component className="text-base font-semibold group-hover:text-primary transition-colors duration-300">
               {project.name}
             </Component>
           </div>

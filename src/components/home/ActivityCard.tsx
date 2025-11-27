@@ -8,11 +8,11 @@ export function ActivityCard({ activity, titleAs }: { activity: ActivityItemType
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
-      <div className="relative flex flex-col justify-between h-full w-full py-5 px-6 rounded-2xl border border-muted-foreground/20 shadow-sm transition-all group-hover:scale-[1.03] group-hover:shadow-md group-hover:bg-muted/5">
+      <div className="relative flex flex-col justify-between h-full w-full py-5 px-6 rounded-2xl border border-muted-foreground/20 shadow-sm transition-all duration-300 group-hover:scale-[1.05] group-hover:shadow-xl group-hover:border-primary/30 group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:via-transparent group-hover:to-primary/5">
         <div className=''>
           <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-start sm:items-center gap-2'>
-            <Calendar size={20} />
-            <Component className="text-sm font-semibold tracking-tight">
+            <Calendar size={20} className="text-primary group-hover:scale-110 transition-transform duration-300" />
+            <Component className="text-sm font-semibold tracking-tight group-hover:text-primary transition-colors duration-300">
               {activity.name}
             </Component>
           </div>

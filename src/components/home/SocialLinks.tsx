@@ -16,7 +16,7 @@ export default function SocialLinks({ className }: { className?: string }) {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={link.ariaLabel ?? `Follow on ${link.name}`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent hover:text-accent-foreground"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110"
                 >
                     <CustomIcon name={link.icon} />
                     <span className="sr-only">{link.name}</span>

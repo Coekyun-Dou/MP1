@@ -10,7 +10,7 @@ export function GithubRepo() {
       href="https://github.com/Coekyun-Dou"
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className="text-md group flex  flex-row items-center justify-start font-medium transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+      className="text-md group flex flex-row items-center justify-start font-medium transition-all duration-300 hover:text-primary hover:scale-110"
     >
       <GithubLogo size={18} weight="duotone" />
       <span className="sr-only">Github Repo</span>

@@ -23,7 +23,7 @@ export function Awards() {
                   href={award.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
+                  className="text-sm text-primary hover:underline transition-all duration-300 hover:translate-x-1 inline-flex items-center gap-1"
                 >
                   Learn more →
                 </a>
